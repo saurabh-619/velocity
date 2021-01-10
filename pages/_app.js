@@ -1,8 +1,8 @@
-import { ThemeProvider, CSSReset } from "@chakra-ui/react";
+import { ThemeProvider, CSSReset } from "@chakra-ui/react"; 
 import { AuthProvider } from "@/lib/auth";
 import customTheme from "../styles/theme";
 import { Global, css } from "@emotion/react";
-import Head from "next/head";
+import Head from "next/head"; 
 
 function MyApp({ Component, pageProps }) {
   const GlobalStyle = ({ children }) => {
@@ -41,8 +41,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={customTheme}>
       <AuthProvider>
-        {/* adds default themes by chakra-ui */}
-        <GlobalStyle />
+        {/* adds default themes by chakra-ui */} 
+        <GlobalStyle /> 
         <Component {...pageProps} />
       </AuthProvider>
     </ThemeProvider>
